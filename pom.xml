@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+    	<groupId>org.beangle</groupId>
+    	<artifactId>beangle-java-parent</artifactId>
+    <version>9</version>
+  </parent>
+	<groupId>org.beangle.fdc</groupId>
+	<artifactId>beangle-fdc-parent</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+	<name>Beangle Failure Data Capture Parent</name>
+
+	<description>Failure Data Capture</description>
+
+	<modules>
+		<module>api</module>
+		<module>jms</module>
+		<module>struts2</module>
+	</modules>
+</project>
