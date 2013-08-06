@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="org.beangle.fdc.sample" extends="org.beangle.fdc.struts2">
+		<interceptors>
+			<interceptor-stack name="fdcSampleStack">
+				<interceptor-ref name="fdcException"/>
+				<interceptor-ref name="i18n2"/>
+				<interceptor-ref name="fileUpload"/>
+				<interceptor-ref name="ssc"/>
+				<interceptor-ref name="flash"/>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="fdcSampleStack"/>
+		<global-results>
+			<result name="redirector" type="freemarker">/template/redirector.ftl</result>
+			<result name="error" type="freemarker">/template/error.ftl</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception" result="error"/>
+		</global-exception-mappings>
+	</package>
+</struts>
+

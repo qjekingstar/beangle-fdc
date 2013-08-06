@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="org.beangle.fdc.struts2" extends="beangle">
+		<interceptors>
+			<interceptor name="fdcException" class="org.beangle.fdc.struts2.interceptor.ExceptionMappingInterceptor"/>
+		</interceptors>
+	</package>
+</struts>
+
